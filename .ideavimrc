@@ -20,25 +20,16 @@ nmap <leader>d :action GotoDeclaration<cr>
 nmap <leader>b :action Back<cr>
 nmap <leader>f :action Forward<cr>
 nnoremap <leader>rf :action RecentFiles<cr>
-nnoremap <leader>rc :actiony RecentChangedFiles<cr>
+nnoremap <leader>rc :action RecentChangedFiles<cr>
+nnoremap <leader>ie :action IntroduceVariable<cr>
+nnoremap <leader>ra :action RunClass<cr>
+nnoremap <leader>ne :action GotoNextError<cr>
 
 nmap <leader>f :action GotoFile<cr>
 nmap <leader>c :action GotoClass<cr>
-#nmap <leader>ns :action GotoSymbol<cr>
 nmap <leader>sp :action FileStructurePopup<cr>
 nmap <leader>ed :action ShowErrorDescription<cr>
 nnoremap <Leader>su :action ShowUsages<CR>
 nnoremap <Leader>fu :action FindUsages<CR>
 nnoremap <Leader>// :action CommentByLineComment<CR>
-vnoremap <Leader>/// :action CommentByBlockComment<CR>
 nnoremap <leader>gi :action GotoImplementation<cr>
-nnoremap <leader>vjc :action QuickJavadoc<cr>
-
-" IdeaVim uses 'a' for alt instead of Vim's 'm'
-nmap <a-j> 15gj
-nmap <a-k> 15gk
-
-" Won't work in visual mode (with vmap) for some reason.
-" Use default map of <c-/> for that.
-nmap gcc :action CommentByLineComment<cr>
-
